@@ -395,23 +395,24 @@ const About = () => {
           </section>
 
           {/* Stats Section */}
-          <section className="py-16 bg-Black-50 text-Black-900">
-            <div className="container mx-auto px-4">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                {[
-                  { number: "80+", label: "Projects Completed" },
-                  { number: "50+", label: "Happy Clients" },
-                  { number: "150+", label: "Team Members" },
-                  { number: "17+", label: "Countries Served" },
-                ].map((stat, index) => (
-                  <div key={index} className="p-6">
-                    <p className="text-4xl md:text-5xl font-bold mb-2 text-orange-500">{stat.number}</p>
-                    <p className="text-lg text-White-600">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+<section className="py-16 bg-black text-white">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      {[
+        { number: "80+", label: "Projects Completed" },
+        { number: "50+", label: "Happy Clients" },
+        { number: "150+", label: "Team Members" },
+        { number: "17+", label: "Countries Served" },
+      ].map((stat, index) => (
+        <div key={index} className="p-6">
+          <p className="text-4xl md:text-5xl font-bold mb-2 text-orange-500">{stat.number}</p>
+          <p className="text-lg text-gray-300">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
           {/* CTA Section */}
           <section className="py-20 bg-orange-500 text-white">
