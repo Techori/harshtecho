@@ -3,10 +3,6 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building, Users, GraduationCap, Handshake, CheckCircle, Activity, Heart, ArrowRight } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/autoplay";
-import { Autoplay } from "swiper/modules";
 
 const About = () => {
   const [loaded, setLoaded] = useState(false);
@@ -306,14 +302,7 @@ const About = () => {
       We proudly serve clients across <strong>20+ countries</strong>, delivering reliable and innovative IT solutions.
     </p>
 
-    <Swiper
-      modules={[Autoplay]}
-      slidesPerView={6}
-      spaceBetween={20}
-      autoplay={{ delay: 1000, disableOnInteraction: false }}
-      speed={1000}
-      loop={true}
-    >
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
       {[
         { name: "India", flag: "🇮🇳" },
         { name: "USA", flag: "🇺🇸" },
@@ -336,16 +325,18 @@ const About = () => {
         { name: "Thailand", flag: "🇹🇭" },
         { name: "Italy", flag: "🇮🇹" },
       ].map((country, index) => (
-        <SwiperSlide key={index}>
-          <div className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-            <div className="text-3xl mb-2">{country.flag}</div>
-            <p className="text-lg font-semibold">{country.name}</p>
-          </div>
-        </SwiperSlide>
+        <div
+          key={index}
+          className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition"
+        >
+          <div className="text-3xl mb-2">{country.flag}</div>
+          <p className="text-lg font-semibold">{country.name}</p>
+        </div>
       ))}
-    </Swiper>
+    </div>
   </div>
 </section>
+
           
           {/* Team Section */}
           <section className="py-16 bg-gray-50">
