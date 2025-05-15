@@ -304,8 +304,8 @@ const About = () => {
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
       {[
-        { name: "India", flag: "/aboutus/Flag_of_India.jpg" },
-        { name: "USA", flag: "/aboutus/Flag_of_India.jpg" },
+        { name: "Bharat", flag: "🇮🇳" },
+        { name: "USA", flag: "🇺🇸" },
         { name: "UK", flag: "🇬🇧" },
         { name: "Canada", flag: "🇨🇦" },
         { name: "Australia", flag: "🇦🇺" },
@@ -315,12 +315,12 @@ const About = () => {
         { name: "UAE", flag: "🇦🇪" },
         { name: "Japan", flag: "🇯🇵" },
         { name: "Netherlands", flag: "🇳🇱" },
-        { name: "South Africa", flag: "🇿🇦" },
+        { name: "Russia", flag: "🇷🇺" },
         { name: "Brazil", flag: "🇧🇷" },
         { name: "Malaysia", flag: "🇲🇾" },
         { name: "New Zealand", flag: "🇳🇿" },
         { name: "Saudi Arabia", flag: "🇸🇦" },
-        { name: "Bangladesh", flag: "🇧🇩" },
+        { name: "Ukraine", flag: "🇺🇦" },
         { name: "Nepal", flag: "🇳🇵" },
         { name: "Thailand", flag: "🇹🇭" },
         { name: "Italy", flag: "🇮🇹" },
