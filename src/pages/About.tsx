@@ -304,8 +304,8 @@ const About = () => {
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
       {[
-        { name: "India", flag: "https://en.wikipedia.org/wiki/File:Flag_of_India.svg" },
-        { name: "USA", flag: "🇺🇸" },
+        { name: "India", flag: "IN" },
+        { name: "USA", flag: "/aboutus/USA.png" },
         { name: "UK", flag: "🇬🇧" },
         { name: "Canada", flag: "🇨🇦" },
         { name: "Australia", flag: "🇦🇺" },
