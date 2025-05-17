@@ -305,8 +305,8 @@ const About = () => {
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
       {[
         { name: "Bharat", image: "/aboutus/flag-square-500.png" },
-        { name: "USA", flag: "/aboutus/DInesh kumar sharma.jpg" },
-        { name: "UK", flag: "🇬🇧" },
+        { name: "USA", image: "/aboutus/DInesh kumar sharma.jpg" },
+        { name: "UK",  image: "/aboutus/KR Rishishwar.jpg"},
         { name: "Canada", flag: "🇨🇦" },
         { name: "Australia", flag: "🇦🇺" },
         { name: "Germany", flag: "🇩🇪" },
