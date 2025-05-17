@@ -10,7 +10,7 @@ import 'swiper/css';
 
 const getCountryCode = (countryName: string) => {
   const codes: { [key: string]: string } = {
-    "भारत ( Bharat )": "🇮🇳",
+    "भारत  Bharat": "🇮🇳",
     "USA": "🇺🇸",
     "UK": "🇬🇧",
     "Canada": "🇨🇦",
@@ -21,7 +21,7 @@ const getCountryCode = (countryName: string) => {
     "UAE": "🇦🇪",
     "Japan": "🇯🇵",
     "Netherlands": "🇳🇱",
-    "South Africa": "🇿🇦",
+    "Ukraine": "🇺🇦",
     "Brazil": "🇧🇷",
     "Malaysia": "🇲🇾",
     "New Zealand": "🇳🇿",
@@ -29,6 +29,7 @@ const getCountryCode = (countryName: string) => {
     "Bangladesh": "🇧🇩",
     "Nepal": "🇳🇵",
     "Thailand": "🇹🇭",
+    "Russia": "🇷🇺"
     "Italy": "🇮🇹"
   };
   return codes[countryName] || countryName.slice(0, 2).toUpperCase();
@@ -543,7 +544,7 @@ const About = () => {
                   { number: "80+", label: "Projects Completed" },
                   { number: "50+", label: "Happy Clients" },
                   { number: "150+", label: "Team Members" },
-                  { number: "17+", label: "Countries Served" },
+                  { number: "20+", label: "Countries Served" },
                 ].map((stat, index) => (
                   <div key={index} className="p-6">
                     <p className="text-4xl md:text-5xl font-bold mb-2 text-orange-500">{stat.number}</p>
