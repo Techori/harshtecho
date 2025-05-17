@@ -22,7 +22,7 @@ const About = () => {
       image: "/aboutus/KR Rishishwar.jpg",
     },
     {
-      name: "Mr. DInesh kumar sharma",
+      name: "Mr. Dinesh kumar sharma",
       position: "Authorized Director",
       company: "Rishishwar Industry Private Limited",
       image: "/aboutus/DInesh kumar sharma.jpg"
@@ -364,7 +364,7 @@ const About = () => {
                     bio: "With 5+ years in the tech industry, Mr. KR leads TECHORI's vision and strategy Of Our Company.",
                   },
                   {
-                    name: "DInesh kumar sharma",
+                    name: "Dinesh kumar sharma",
                     position: "Authorised Director Of Rishishwar Industry Private limited",
                     image: "aboutus/DInesh kumar sharma.jpg",
                     bio: "An expert in emerging technologies, Samantha drives our technical innovation.",
