@@ -7,6 +7,33 @@ import NoticePopup from '@/components/home/NoticePopup';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+
+const getCountryCode = (countryName: string) => {
+  const codes: { [key: string]: string } = {
+    "India": "🇮🇳",
+    "USA": "🇺🇸",
+    "UK": "🇬🇧",
+    "Canada": "🇨🇦",
+    "Australia": "🇦🇺",
+    "Germany": "🇩🇪",
+    "France": "🇫🇷",
+    "Singapore": "🇸🇬",
+    "UAE": "🇦🇪",
+    "Japan": "🇯🇵",
+    "Netherlands": "🇳🇱",
+    "South Africa": "🇿🇦",
+    "Brazil": "🇧🇷",
+    "Malaysia": "🇲🇾",
+    "New Zealand": "🇳🇿",
+    "Saudi Arabia": "🇸🇦",
+    "Bangladesh": "🇧🇩",
+    "Nepal": "🇳🇵",
+    "Thailand": "🇹🇭",
+    "Italy": "🇮🇹"
+  };
+  return codes[countryName] || countryName.slice(0, 2).toUpperCase();
+};
+
 const About = () => {
   const [loaded, setLoaded] = useState(false);
 
@@ -338,61 +365,111 @@ const About = () => {
             >
 
               {[
-
-                { name: "India", flag: "🇮🇳" },
-
-                { name: "USA", flag: "🇺🇸" },
-
-                { name: "UK", flag: "🇬🇧" },
-
-                { name: "Canada", flag: "🇨🇦" },
-
-                { name: "Australia", flag: "🇦🇺" },
-
-                { name: "Germany", flag: "🇩🇪" },
-
-                { name: "France", flag: "🇫🇷" },
-
-                { name: "Singapore", flag: "🇸🇬" },
-
-                { name: "UAE", flag: "🇦🇪" },
-
-                { name: "Japan", flag: "🇯🇵" },
-
-                { name: "Netherlands", flag: "🇳🇱" },
-
-                { name: "South Africa", flag: "🇿🇦" },
-
-                { name: "Brazil", flag: "🇧🇷" },
-
-                { name: "Malaysia", flag: "🇲🇾" },
-
-                { name: "New Zealand", flag: "🇳🇿" },
-
-                { name: "Saudi Arabia", flag: "🇸🇦" },
-
-                { name: "Bangladesh", flag: "🇧🇩" },
-
-                { name: "Nepal", flag: "🇳🇵" },
-
-                { name: "Thailand", flag: "🇹🇭" },
-
-                { name: "Italy", flag: "🇮🇹" },
-
+                { 
+                  name: "India", 
+                  flag: "https://flagcdn.com/w40/in.png"
+                },
+                { 
+                  name: "USA", 
+                  flag: "https://flagcdn.com/w40/us.png"
+                },
+                { 
+                  name: "UK", 
+                  flag: "https://flagcdn.com/w40/gb.png"
+                },
+                { 
+                  name: "Canada", 
+                  flag: "https://flagcdn.com/w40/ca.png"
+                },
+                { 
+                  name: "Australia", 
+                  flag: "https://flagcdn.com/w40/au.png"
+                },
+                { 
+                  name: "Germany", 
+                  flag: "https://flagcdn.com/w40/de.png"
+                },
+                { 
+                  name: "France", 
+                  flag: "https://flagcdn.com/w40/fr.png"
+                },
+                { 
+                  name: "Singapore", 
+                  flag: "https://flagcdn.com/w40/sg.png"
+                },
+                { 
+                  name: "UAE", 
+                  flag: "https://flagcdn.com/w40/ae.png"
+                },
+                { 
+                  name: "Japan", 
+                  flag: "https://flagcdn.com/w40/jp.png"
+                },
+                { 
+                  name: "Netherlands", 
+                  flag: "https://flagcdn.com/w40/nl.png"
+                },
+                { 
+                  name: "South Africa", 
+                  flag: "https://flagcdn.com/w40/za.png"
+                },
+                { 
+                  name: "Brazil", 
+                  flag: "https://flagcdn.com/w40/br.png"
+                },
+                { 
+                  name: "Malaysia", 
+                  flag: "https://flagcdn.com/w40/my.png"
+                },
+                { 
+                  name: "New Zealand", 
+                  flag: "https://flagcdn.com/w40/nz.png"
+                },
+                { 
+                  name: "Saudi Arabia", 
+                  flag: "https://flagcdn.com/w40/sa.png"
+                },
+                { 
+                  name: "Bangladesh", 
+                  flag: "https://flagcdn.com/w40/bd.png"
+                },
+                { 
+                  name: "Nepal", 
+                  flag: "https://flagcdn.com/w40/np.png"
+                },
+                { 
+                  name: "Thailand", 
+                  flag: "https://flagcdn.com/w40/th.png"
+                },
+                { 
+                  name: "Italy", 
+                  flag: "https://flagcdn.com/w40/it.png"
+                },
               ].map((country, index) => (
-
                 <SwiperSlide key={index}>
-
                   <div className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-
-                    <div className="text-3xl mb-2 "style={{ fontFamily: 'system-ui' }}>{country.flag}</div>
-
+                    <div className="mb-2 h-10 flex items-center justify-center">
+                      <img 
+                        src={country.flag} 
+                        alt={`${country.name} flag`}
+                        className="max-h-10 w-auto mx-auto object-contain"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.style.display = 'none';
+                          (e.currentTarget.nextSibling as HTMLElement).style.display = 'block';
+                        }}
+                      />
+                      <span 
+                        className="hidden text-lg font-medium text-gray-700 text-center"
+                        aria-hidden="true"
+                      >
+                        {getCountryCode(country.name)}
+                      </span>
+                    </div>
                     <p className="text-lg font-semibold">{country.name}</p>
-
                   </div>
-
                 </SwiperSlide>
-
               ))}
 
             </Swiper>
