@@ -304,6 +304,53 @@ const About = () => {
                   The talented professionals behind TECHORI's success
                 </p>
               </div>
+              <section className="py-12 bg-white text-gray-800">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+    <h2 className="text-4xl font-bold mb-4">Global Presence</h2>
+    <p className="text-lg mb-10">
+      We proudly serve clients across <strong>20+ countries</strong>, delivering reliable and innovative IT solutions.
+    </p>
+
+    <Swiper
+      modules={[Autoplay]}
+      slidesPerView={6}
+      spaceBetween={20}
+      autoplay={{ delay: 1000, disableOnInteraction: false }}
+      speed={1000}
+      loop={true}
+    >
+      {[
+        { name: "India", flag: "🇮🇳" },
+        { name: "USA", flag: "🇺🇸" },
+        { name: "UK", flag: "🇬🇧" },
+        { name: "Canada", flag: "🇨🇦" },
+        { name: "Australia", flag: "🇦🇺" },
+        { name: "Germany", flag: "🇩🇪" },
+        { name: "France", flag: "🇫🇷" },
+        { name: "Singapore", flag: "🇸🇬" },
+        { name: "UAE", flag: "🇦🇪" },
+        { name: "Japan", flag: "🇯🇵" },
+        { name: "Netherlands", flag: "🇳🇱" },
+        { name: "South Africa", flag: "🇿🇦" },
+        { name: "Brazil", flag: "🇧🇷" },
+        { name: "Malaysia", flag: "🇲🇾" },
+        { name: "New Zealand", flag: "🇳🇿" },
+        { name: "Saudi Arabia", flag: "🇸🇦" },
+        { name: "Bangladesh", flag: "🇧🇩" },
+        { name: "Nepal", flag: "🇳🇵" },
+        { name: "Thailand", flag: "🇹🇭" },
+        { name: "Italy", flag: "🇮🇹" },
+      ].map((country, index) => (
+        <SwiperSlide key={index}>
+          <div className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
+            <div className="text-3xl mb-2">{country.flag}</div>
+            <p className="text-lg font-semibold">{country.name}</p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   {
