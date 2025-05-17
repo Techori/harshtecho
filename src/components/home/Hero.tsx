@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import TechoriAnimation from "./Threejs";
-import NoticePopup from '@/components/NoticePopup';
 const Hero = () => {
   return (
     <div className="relative bg-techori-dark text-white overflow-hidden">
