@@ -355,7 +355,7 @@ const About = () => {
     </Swiper>
   </div>
 </section>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
                 {[
                   {
                     name: "K.R. Rishishwar",
@@ -366,7 +366,7 @@ const About = () => {
                   {
                     name: "Dinesh kumar sharma",
                     position: "Authorised Director Of Rishishwar Industry Private limited",
-                    image: "aboutus/DInesh kumar sharma.jpg",
+                    image: "aboutus/Dinesh kumar sharma.jpg",
                     bio: "An expert in emerging technologies, Samantha drives our technical innovation.",
                   },
                   {
