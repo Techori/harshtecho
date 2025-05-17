@@ -28,9 +28,6 @@ const NoticePopup: React.FC = () => {
           महत्वपूर्ण सूचना / Important Notice
         </h2>
         <div className="text-gray-800 space-y-4 text-base">
-          <p>
-    यह सूचना हमारे सभी ग्राहकों एवं कर्मचारियों के लिए है।
-  </p>
 
   <p>
     हम आपको सूचित करना चाहते हैं कि हमारी संस्था ने एक रणनीतिक व्यवसायिक निर्णय के तहत, 
@@ -49,10 +46,7 @@ const NoticePopup: React.FC = () => {
   </p>
 
   <hr class="border-yellow-300" />
-
-  <p>
-    <strong>This notice is for all our valued customers and employees.</strong>
-  </p>
+  
 
   <p>
     We would like to inform you that effective from <strong>15th May 2025</strong>, our organization has made a strategic business decision 
