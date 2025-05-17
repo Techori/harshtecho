@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building, Users, GraduationCap, Handshake, CheckCircle, Activity, Heart, ArrowRight } from "lucide-react";
-
+import {NoticePopup} from '@/components/NoticePopup';
 const About = () => {
   const [loaded, setLoaded] = useState(false);
 
@@ -304,8 +304,8 @@ const About = () => {
 
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
       {[
-        { name: "Bharat", flag: "./aboutus/flag-square-500.png" },
-        { name: "USA", flag: "🇺🇸" },
+        { name: "Bharat", flag: "/aboutus/flag-square-500.png" },
+        { name: "USA", flag: "/aboutus/DInesh kumar sharma.jpg" },
         { name: "UK", flag: "🇬🇧" },
         { name: "Canada", flag: "🇨🇦" },
         { name: "Australia", flag: "🇦🇺" },
