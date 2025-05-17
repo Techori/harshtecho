@@ -30,7 +30,7 @@ const getCountryCode = (countryName: string) => {
     "Nepal": "🇳🇵",
     "Thailand": "🇹🇭",
     "Russia": "🇷🇺",
-    "Italy": "🇮🇹"
+    "Italy": "🇮🇹",
   };
   return codes[countryName] || countryName.slice(0, 2).toUpperCase();
 };
