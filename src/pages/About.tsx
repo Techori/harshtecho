@@ -10,7 +10,7 @@ import 'swiper/css';
 
 const getCountryCode = (countryName: string) => {
   const codes: { [key: string]: string } = {
-    "India": "🇮🇳",
+    "भारत ( Bharat )": "🇮🇳",
     "USA": "🇺🇸",
     "UK": "🇬🇧",
     "Canada": "🇨🇦",
