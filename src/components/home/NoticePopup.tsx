@@ -41,7 +41,7 @@ const NoticePopup: React.FC = () => {
           <p>
             This decision has been taken amicably and in good faith, without any conflict or negativity. We sincerely appreciate the support and cooperation extended by our partners and clients in these countries over the years.
           </p>
-          <p className="font-semibold text-right">— Rishishwar Industry Private Limited</p>
+          <p className="font-semibold text-right">— TECHORI From Rishishwar Industry Private Limited</p>
         </div>
       </div>
     </div>
