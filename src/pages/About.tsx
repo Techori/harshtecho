@@ -22,7 +22,7 @@ const About = () => {
       image: "/aboutus/KR Rishishwar.jpg",
     },
     {
-      name: "Mr. Dinesh kumar sharma",
+      name: "Mr. DInesh kumar sharma",
       position: "Authorized Director",
       company: "Rishishwar Industry Private Limited",
       image: "/aboutus/DInesh kumar sharma.jpg"
@@ -84,7 +84,7 @@ const About = () => {
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Innovation for All</h3>
                                 <p className="text-gray-600">
-                                 Empowering individuals and businesses through accessible innovation by delivering advanced IT solutions, smart applications, and public Wi-Fi—enabling inclusive growth in a digitally connected world..
+                                  Empowering individuals and businesses through accessible innovation by delivering advanced IT solutions, smart applications, and public Wi-Fi—enabling inclusive growth in a digitally connected world..
                                 </p>
                               </div>
                             </div>
@@ -132,13 +132,18 @@ const About = () => {
                       <div className="space-y-6">
                         {leaders.map((leader, index) => (
                           <div key={index} className="flex items-center gap-4">
-                            <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
-                              <img src={leader.image} alt={leader.name} className="w-full h-full object-cover" />
+                            <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full overflow-hidden bg-gray-200">
+                              <img 
+                                src={leader.image} 
+                                alt={leader.name} 
+                                className="w-full h-full object-cover" 
+                                loading="lazy"
+                              />
                             </div>
                             <div>
-                              <h4 className="text-lg font-semibold text-gray-900">{leader.name}</h4>
-                              <p className="text-gray-600 text-sm">{leader.position}</p>
-                              <p className="text-gray-500 text-sm">{leader.company}</p>
+                              <h4 className="text-base sm:text-lg font-semibold text-gray-900">{leader.name}</h4>
+                              <p className="text-xs sm:text-sm text-gray-600">{leader.position}</p>
+                              <p className="text-xs sm:text-sm text-gray-500">{leader.company}</p>
                             </div>
                           </div>
                         ))}
@@ -229,9 +234,8 @@ const About = () => {
                   <div key={index} className={`relative mb-12 ${index % 2 === 0 ? "md:ml-auto md:mr-[50%]" : "md:mr-auto md:ml-[50%]"} md:w-[45%]`}>
                     <div className="bg-white p-6 rounded-lg shadow-md relative z-10">
                       <div
-                        className={`absolute top-6 hidden md:block ${
-                          index % 2 === 0 ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2"
-                        } w-4 h-4 rounded-full bg-orange-500`}
+                        className={`absolute top-6 hidden md:block ${index % 2 === 0 ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2"
+                          } w-4 h-4 rounded-full bg-orange-500`}
                       ></div>
                       <span className="inline-block px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-semibold mb-3">
                         {item.year}
@@ -298,6 +302,94 @@ const About = () => {
               </div>
             </div>
           </section>
+          <div className="max-w-7xl mx-auto px-4 text-center">
+
+            <h2 className="text-4xl font-bold mb-4">Global Presence</h2>
+
+            <p className="text-lg mb-10">
+
+              We proudly serve clients across <strong>20+ countries</strong>, delivering reliable and innovative IT solutions.
+
+            </p>
+
+            <Swiper
+
+              modules={[Autoplay]}
+
+              slidesPerView={6}
+
+              spaceBetween={20}
+
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+
+              speed={1000}
+
+              loop={true}
+
+            >
+
+              {[
+
+                { name: "India", flag: "🇮🇳" },
+
+                { name: "USA", flag: "🇺🇸" },
+
+                { name: "UK", flag: "🇬🇧" },
+
+                { name: "Canada", flag: "🇨🇦" },
+
+                { name: "Australia", flag: "🇦🇺" },
+
+                { name: "Germany", flag: "🇩🇪" },
+
+                { name: "France", flag: "🇫🇷" },
+
+                { name: "Singapore", flag: "🇸🇬" },
+
+                { name: "UAE", flag: "🇦🇪" },
+
+                { name: "Japan", flag: "🇯🇵" },
+
+                { name: "Netherlands", flag: "🇳🇱" },
+
+                { name: "South Africa", flag: "🇿🇦" },
+
+                { name: "Brazil", flag: "🇧🇷" },
+
+                { name: "Malaysia", flag: "🇲🇾" },
+
+                { name: "New Zealand", flag: "🇳🇿" },
+
+                { name: "Saudi Arabia", flag: "🇸🇦" },
+
+                { name: "Bangladesh", flag: "🇧🇩" },
+
+                { name: "Nepal", flag: "🇳🇵" },
+
+                { name: "Thailand", flag: "🇹🇭" },
+
+                { name: "Italy", flag: "🇮🇹" },
+
+              ].map((country, index) => (
+
+                <SwiperSlide key={index}>
+
+                  <div className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
+
+                    <div className="text-3xl mb-2 "style={{ fontFamily: 'system-ui' }}>{country.flag}</div>
+
+                    <p className="text-lg font-semibold">{country.name}</p>
+
+                  </div>
+
+                </SwiperSlide>
+
+              ))}
+
+            </Swiper>
+
+          </div>
+
 
           {/* Team Section */}
           <section className="py-16 bg-gray-50">
@@ -308,54 +400,8 @@ const About = () => {
                   The talented professionals behind TECHORI's success
                 </p>
               </div>
-              <section className="py-12 bg-white text-gray-800">
-  <div className="max-w-7xl mx-auto px-4 text-center">
-    <h2 className="text-4xl font-bold mb-4">Global Presence</h2>
-    <p className="text-lg mb-10">
-      We proudly serve clients across <strong>20+ countries</strong>, delivering reliable and innovative IT solutions.
-    </p>
 
-    <Swiper
-      modules={[Autoplay]}
-      slidesPerView={6}
-      spaceBetween={20}
-      autoplay={{ delay: 1000, disableOnInteraction: false }}
-      speed={1000}
-      loop={true}
-    >
-      {[
-        { name: "India", flag: "🇮🇳" },
-        { name: "USA", flag: "🇺🇸" },
-        { name: "UK", flag: "🇬🇧" },
-        { name: "Canada", flag: "🇨🇦" },
-        { name: "Australia", flag: "🇦🇺" },
-        { name: "Germany", flag: "🇩🇪" },
-        { name: "France", flag: "🇫🇷" },
-        { name: "Singapore", flag: "🇸🇬" },
-        { name: "UAE", flag: "🇦🇪" },
-        { name: "Japan", flag: "🇯🇵" },
-        { name: "Netherlands", flag: "🇳🇱" },
-        { name: "South Africa", flag: "🇿🇦" },
-        { name: "Brazil", flag: "🇧🇷" },
-        { name: "Malaysia", flag: "🇲🇾" },
-        { name: "New Zealand", flag: "🇳🇿" },
-        { name: "Saudi Arabia", flag: "🇸🇦" },
-        { name: "Bangladesh", flag: "🇧🇩" },
-        { name: "Nepal", flag: "🇳🇵" },
-        { name: "Thailand", flag: "🇹🇭" },
-        { name: "Italy", flag: "🇮🇹" },
-      ].map((country, index) => (
-        <SwiperSlide key={index}>
-          <div className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-            <div className="text-3xl mb-2">{country.flag}</div>
-            <p className="text-lg font-semibold">{country.name}</p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-</section>
-              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   {
                     name: "K.R. Rishishwar",
@@ -364,9 +410,9 @@ const About = () => {
                     bio: "With 5+ years in the tech industry, Mr. KR leads TECHORI's vision and strategy Of Our Company.",
                   },
                   {
-                    name: "Dinesh kumar sharma",
+                    name: "DInesh kumar sharma",
                     position: "Authorised Director Of Rishishwar Industry Private limited",
-                    image: "aboutus/Dinesh kumar sharma.jpg",
+                    image: "aboutus/DInesh kumar sharma.jpg",
                     bio: "An expert in emerging technologies, Samantha drives our technical innovation.",
                   },
                   {
@@ -403,23 +449,23 @@ const About = () => {
           </section>
 
           {/* Stats Section */}
-<section className="py-16 bg-black text-white">
-  <div className="container mx-auto px-4">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      {[
-        { number: "80+", label: "Projects Completed" },
-        { number: "50+", label: "Happy Clients" },
-        { number: "150+", label: "Team Members" },
-        { number: "17+", label: "Countries Served" },
-      ].map((stat, index) => (
-        <div key={index} className="p-6">
-          <p className="text-4xl md:text-5xl font-bold mb-2 text-orange-500">{stat.number}</p>
-          <p className="text-lg text-gray-300">{stat.label}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+          <section className="py-16 bg-black text-white">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                {[
+                  { number: "80+", label: "Projects Completed" },
+                  { number: "50+", label: "Happy Clients" },
+                  { number: "150+", label: "Team Members" },
+                  { number: "17+", label: "Countries Served" },
+                ].map((stat, index) => (
+                  <div key={index} className="p-6">
+                    <p className="text-4xl md:text-5xl font-bold mb-2 text-orange-500">{stat.number}</p>
+                    <p className="text-lg text-gray-300">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
 
 
           {/* CTA Section */}
