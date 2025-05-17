@@ -29,18 +29,42 @@ const NoticePopup: React.FC = () => {
         </h2>
         <div className="text-gray-800 space-y-4 text-base">
           <p>
-            हम आपको सूचित करना चाहते हैं कि हमारी संस्था ने एक रणनीतिक निर्णय के तहत, टर्की एवं अज़रबैजान में हमारे सभी प्रकार के व्यावसायिक कार्यों और व्यापारिक गतिविधियों को <strong>सौहार्द्रपूर्ण एवं मैत्री भाव</strong> के साथ <strong>पूर्ण रूप से बंद</strong> करने का निर्णय लिया है।
-          </p>
-          <p>
-            यह निर्णय आपसी समझ और सम्मान के साथ लिया गया है, जिसमें किसी भी प्रकार की दुर्भावना नहीं है। हम इन देशों के साथ भविष्य में अच्छे संबंध बनाए रखने की आशा करते हैं और उन सभी सहयोगियों व ग्राहकों का हृदय से आभार व्यक्त करते हैं जिन्होंने अब तक हमारा समर्थन किया।
-          </p>
-          <hr className="border-yellow-300" />
-          <p>
-            We would like to inform you that our organization has made a strategic decision to <strong>permanently discontinue all types of business operations and commercial activities in Turkey and Azerbaijan</strong>, conducted in a spirit of mutual respect and friendship.
-          </p>
-          <p>
-            This decision has been taken amicably and in good faith, without any conflict or negativity. We sincerely appreciate the support and cooperation extended by our partners and clients in these countries over the years.
-          </p>
+    यह सूचना हमारे सभी ग्राहकों एवं कर्मचारियों के लिए है।
+  </p>
+
+  <p>
+    हम आपको सूचित करना चाहते हैं कि हमारी संस्था ने एक रणनीतिक व्यवसायिक निर्णय के तहत, 
+    <strong>दिनांक 15 मई 2025 से</strong> टर्की एवं अज़रबैजान में हमारे सभी प्रकार के व्यावसायिक कार्यों और व्यापारिक गतिविधियों को 
+    <strong>सौहार्द्रपूर्ण एवं मैत्री भाव</strong> के साथ <strong>पूर्ण रूप से बंद</strong> करने का निर्णय लिया है।
+  </p>
+
+  <p>
+    यह निर्णय आपसी समझ और सम्मान के साथ लिया गया है, जिसमें किसी भी प्रकार की दुर्भावना या राजनीतिक उद्देश्य नहीं है। 
+    यह पूरी तरह से संसाधनों के पुनःआवंटन और रणनीतिक व्यापारिक योजना के अंतर्गत लिया गया कदम है।
+  </p>
+
+  <p>
+    हम टर्की एवं अज़रबैजान में अब तक हमारे साथ जुड़े रहे सभी ग्राहकों, सहयोगियों और कर्मचारियों का हृदय से आभार व्यक्त करते हैं 
+    और आशा करते हैं कि भविष्य में हमारे संबंध सौहार्द्रपूर्ण बने रहेंगे।
+  </p>
+
+  <hr class="border-yellow-300" />
+
+  <p>
+    <strong>This notice is for all our valued customers and employees.</strong>
+  </p>
+
+  <p>
+    We would like to inform you that effective from <strong>15th May 2025</strong>, our organization has made a strategic business decision 
+    to <strong>permanently discontinue all types of business operations and commercial activities in Turkey and Azerbaijan</strong>, 
+    conducted in the spirit of mutual respect and friendship.
+  </p>
+
+  <p>
+    This decision has been made amicably, with no political or negative intent. 
+    It is part of a strategic business restructuring and resource reallocation. 
+    We sincerely appreciate the continued support and cooperation of our clients, partners, and employees in these countries.
+  </p>
           <p className="font-semibold text-right">— TECHORI From Rishishwar Industry Private Limited</p>
         </div>
       </div>
