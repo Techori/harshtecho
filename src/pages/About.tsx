@@ -3,7 +3,10 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building, Users, GraduationCap, Handshake, CheckCircle, Activity, Heart, ArrowRight } from "lucide-react";
-import {NoticePopup} from '@/components/NoticePopup';
+import NoticePopup from '@/components/home/NoticePopup';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 const About = () => {
   const [loaded, setLoaded] = useState(false);
 
@@ -29,6 +32,7 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
+      <NoticePopup />
       <section className="relative py-24 bg-white overflow-hidden h-10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
