@@ -295,49 +295,6 @@ const About = () => {
             </div>
           </section>
 
-<section className="py-12 bg-white text-gray-800">
-  <div className="max-w-7xl mx-auto px-4 text-center">
-    <h2 className="text-4xl font-bold mb-4">Global Presence</h2>
-    <p className="text-lg mb-10">
-      We proudly serve clients across <strong>20+ countries</strong>, delivering reliable and innovative IT solutions.
-    </p>
-
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-      {[
-        { name: "Bharat", image: "/aboutus/flag-square-500.png" },
-        { name: "USA", image: "/aboutus/DInesh kumar sharma.jpg" },
-        { name: "UK",  image: "/aboutus/KR Rishishwar.jpg"},
-        { name: "Canada", flag: "🇨🇦" },
-        { name: "Australia", flag: "🇦🇺" },
-        { name: "Germany", flag: "🇩🇪" },
-        { name: "France", flag: "🇫🇷" },
-        { name: "Singapore", flag: "🇸🇬" },
-        { name: "UAE", flag: "🇦🇪" },
-        { name: "Japan", flag: "🇯🇵" },
-        { name: "Netherlands", flag: "🇳🇱" },
-        { name: "Russia", flag: "🇷🇺" },
-        { name: "Brazil", flag: "🇧🇷" },
-        { name: "Malaysia", flag: "🇲🇾" },
-        { name: "New Zealand", flag: "🇳🇿" },
-        { name: "Saudi Arabia", flag: "🇸🇦" },
-        { name: "Ukraine", flag: "🇺🇦" },
-        { name: "Nepal", flag: "🇳🇵" },
-        { name: "Thailand", flag: "🇹🇭" },
-        { name: "Italy", flag: "🇮🇹" },
-      ].map((country, index) => (
-        <div
-          key={index}
-          className="bg-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition"
-        >
-          <div className="text-3xl mb-2">{country.flag}</div>
-          <p className="text-lg font-semibold">{country.name}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-          
           {/* Team Section */}
           <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
