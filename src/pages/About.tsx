@@ -316,16 +316,25 @@ const About = () => {
 
               modules={[Autoplay]}
 
-              slidesPerView={6}
-
+              slidesPerView={2}  // Default for mobile
+              breakpoints={{
+                // When window width is >= 640px (sm)
+                640: {
+                  slidesPerView: 3
+                },
+                // When window width is >= 768px (md)
+                768: {
+                  slidesPerView: 4
+                },
+                // When window width is >= 1024px (lg)
+                1024: {
+                  slidesPerView: 6
+                }
+              }}
               spaceBetween={20}
-
               autoplay={{ delay: 1000, disableOnInteraction: false }}
-
               speed={1000}
-
               loop={true}
-
             >
 
               {[
@@ -429,15 +438,16 @@ const About = () => {
                   },
                 ].map((member, index) => (
                   <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 group">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative overflow-hidden p-4">
+                      <div className="aspect-square rounded-full overflow-hidden mx-auto w-48 h-48">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 text-center">
                       <h3 className="text-xl font-bold mb-1 text-gray-900">{member.name}</h3>
                       <p className="text-orange-500 font-medium mb-2">{member.position}</p>
                       <p className="text-gray-600">{member.bio}</p>
