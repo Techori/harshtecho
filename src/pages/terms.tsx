@@ -128,6 +128,9 @@ const Terms: FC = () => {
                     "There is no cooling-off period once a payment is made.",
                     "In case of service termination by you or by TECHORI, no refunds will be issued for any unused portion of the service period.",
                     "In case of disputes or dissatisfaction with services, TECHORI may, at its sole discretion, offer service credits or alternative solutions, but no monetary refunds will be provided.",
+
+"If a double payment occurs due to any technical error or mistake, we will verify the transaction and process a refund to your original payment method within 7 working days.",
+
                     "All purchases, orders, and subscription fees are final once processed.",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
@@ -414,6 +417,9 @@ const Terms: FC = () => {
                     "आपके द्वारा या TECHORI द्वारा सेवा समाप्ति के मामले में, सेवा अवधि के किसी भी अप्रयुक्त हिस्से के लिए कोई रिफंड नहीं दिया जाएगा।",
                     "सेवाओं के साथ विवादों या असंतुष्टि के मामले में, TECHORI अपने विवेकाधिकार पर, सेवा क्रेडिट या वैकल्पिक समाधान प्रदान कर सकता है, लेकिन कोई मौद्रिक रिफंड नहीं दिया जाएगा।",
                     "सभी खरीदारी, आदेश और सदस्यता शुल्क प्रोसेस होने के बाद अंतिम हैं।",
+
+ "यदि किसी तकनीकी त्रुटि या गलती से आपका डबल पेमेंट हो जाता है, तो हम उसे सत्यापन के बाद 7 कार्य दिवसों के भीतर आपके मूल भुगतान माध्यम में रिफंड कर देंगे।",
+
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-techori-purple mt-2 flex-shrink-0" />
