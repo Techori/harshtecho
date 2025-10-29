@@ -23,6 +23,9 @@ const Hero = () => {
             <p className="text-xl mb-8 font-semibold text-gray-300">
               INNOVATION IS OUR PASSION
             </p>
+<p className="text-xl mb-8 font-semibold text-gray-300">
+              Our services start from ₹25,000 and go up to ₹5,00,000, depending on the plan, features, and project requirements.
+            </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-gradient-to-r from-techori-orange to-techori-red hover:brightness-110 text-white px-8">
                 <Link to="/services">Our Services</Link>
