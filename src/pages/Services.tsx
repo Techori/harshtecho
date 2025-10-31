@@ -10,7 +10,7 @@ const Services = () => {
   const services = [
     {
       title: "IT Solutions",
-      description: "Comprehensive IT infrastructure support, security solutions, and managed services designed to optimize your business operations. Our services start from ₹25,000 and go up to ₹5,00,000, depending on the plan, features, and project requirements.",
+      description: "Comprehensive IT infrastructure support, security solutions,and managed services designed to optimize your business operations. Our services start from ₹25,000 and go up to ₹2,00,000, depending on the plan, features, and project requirements",
       icon: <Wrench className="h-12 w-12 text-techori-blue" />,
       features: ["Network Infrastructure", "Cybersecurity", "Cloud Migration", "IT Consulting"],
       link: "/it-solutions"
