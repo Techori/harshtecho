@@ -10,28 +10,28 @@ const Services = () => {
   const services = [
     {
       title: "IT Solutions",
-      description: "Comprehensive IT infrastructure support, security solutions,and managed services designed to optimize your business operations.",
+      description: "Comprehensive IT infrastructure support, security solutions,and managed services designed to optimize your business operations. Our services start from ₹25,000",
       icon: <Wrench className="h-12 w-12 text-techori-blue" />,
       features: ["Network Infrastructure", "Cybersecurity", "Cloud Migration", "IT Consulting"],
       link: "/it-solutions"
     },
     {
       title: "Web & App Development",
-      description: "Custom websites and mobile applications built with cutting-edge technologies and exceptional user experiences.",
+      description: "Custom websites and mobile applications built with cutting-edge technologies and exceptional user experiences. Our services start from ₹50,000",
       icon: <Code className="h-12 w-12 text-techori-blue" />,
       features: ["Responsive Websites", "Mobile Apps", "E-commerce", "Custom Web Platforms"],
       link: "/webapp-development"
     },
     {
       title: "Public Wi-Fi Solutions",
-      description: "Reliable, secure, and high-performance wireless connectivity solutions for businesses, events, and public spaces.",
+      description: "Reliable, secure, and high-performance wireless connectivity solutions for businesses, events, and public spaces. our services start from ₹35,000",
       icon: <Wifi className="h-12 w-12 text-techori-blue" />,
       features: ["Analytics Dashboard", "Captive Portal", "Multi-location Setup", "Advanced Security"],
       link: "/WiFI-solutions"
     },
     {
       title: "Robotics Development",
-      description: "Innovative robotics solutions that automate processes, increase efficiency, and transform business operations.",
+      description: "Innovative robotics solutions that automate processes, increase efficiency, and transform business operations. our services start from ₹250,000",
       icon: <Bot className="h-12 w-12 text-techori-blue" />,
       features: ["Automation Solutions", "Custom Robotics", "AI Integration", "Industrial Applications"],
       link: "/robotics-development"
