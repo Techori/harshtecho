@@ -49,7 +49,7 @@ const ServiceHighlights = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ServiceCard
             title="IT Solutions"
-            description="Comprehensive IT infrastructure management and support services to optimize your business operations."
+            description="Comprehensive IT infrastructure management and support services to optimize your business operations.services start from ₹25,000"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-techori-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -61,7 +61,7 @@ const ServiceHighlights = () => {
           />
           <ServiceCard
             title="Web & App Development"
-            description="Custom websites and mobile apps that deliver exceptional user experiences and drive business results."
+            description="Custom websites and mobile apps that deliver exceptional user experiences and drive business results. services start from ₹50,000"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-techori-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
@@ -73,7 +73,7 @@ const ServiceHighlights = () => {
           />
           <ServiceCard
             title="Public Wi-Fi Solutions service"
-            description="Reliable and secure wireless connectivity solutions for public spaces and business environments."
+            description="Reliable and secure wireless connectivity solutions for public spaces and business environments.services start from ₹35,000"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-techori-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
@@ -86,7 +86,7 @@ const ServiceHighlights = () => {
           />
                     <ServiceCard
             title="Saas Product"
-            description="Reliable and secure wireless connectivity solutions for public spaces and business environments."
+            description="Reliable and secure wireless connectivity solutions for public spaces and business environments.services start from ₹25,000"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-techori-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
@@ -99,7 +99,7 @@ const ServiceHighlights = () => {
           />
           <ServiceCard
             title="Robotics Development"
-            description="Cutting-edge robotics solutions to automate processes and enhance productivity in various industries."
+            description="Cutting-edge robotics solutions to automate processes and enhance productivity in various industries.services start from ₹250,000"
             icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-techori-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="11" width="18" height="10" rx="2"></rect>
