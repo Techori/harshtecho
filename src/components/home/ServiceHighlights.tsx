@@ -42,7 +42,7 @@ const ServiceHighlights = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Core Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive technology solutions tailored to accelerate your business growth and digital transformation.
+            We offer comprehensive technology solutions tailored to accelerate your business growth and digital transformation. our services start from ₹25,000
           </p>
         </div>
 
